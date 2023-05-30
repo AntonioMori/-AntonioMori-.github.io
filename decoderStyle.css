@@ -1,0 +1,200 @@
+body{
+ 
+    
+}
+header{
+
+    background: linear-gradient(#ff0d56, #960238);  
+    height: 200px;    
+    width: 100%;
+    display: inline-block;
+}   
+
+
+.coracaoBarra {/*IMAGEM*/
+    width: 70px;
+    height: 80px;
+    margin: 5px 0 0 15px;
+      
+}
+
+.tituloPrincipal{
+    font-family: 'Cherry Bomb One', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+    text-align: center;
+}
+
+
+.caixaTexto{
+    font-family: "Montserrat", sans-serif;
+    display: inline;
+    width: 25%;
+    height: 90px ;
+    /*talves tire a borda depois*/
+    position: absolute;
+    top: 116.3%;
+    left:74%;
+    
+}
+
+.caixaTexto h1{
+    padding: 0 10px 0 0;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+
+.caixaTexto p{
+    text-align: center;
+    padding: 0 15px 0 10px;
+    line-height: 1.2;
+    text-shadow: 1px 1px #000000;
+    color:#ffffff;
+    
+
+}
+
+.conteudoPrincipal{
+    height: 700px;
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(#960238, #000000);
+}
+
+.caixaCoracao1{
+    
+    width: 500px;
+    height: 500px;
+    margin: 3% 70px 0 20px;
+   
+}
+
+  .coracaoSeparado { /*IMAGEM*/
+    
+    width: 600px;
+    height: 600px;
+    top: 22%;
+    left: 4%;
+  }
+    
+
+  .containerTextoCoracaoSeparado {/*Caixa de texto do coração separado*/
+    position: absolute;
+    top: 50%;
+    left: 50.8px;
+    
+        
+    
+  }
+  
+  .textoCoracaoSeparado{ /*texto do coração dentro da caixa*/
+    
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border:transparent;
+    border-radius: 50px;
+    background:transparent;
+  }
+  
+  
+  .textoCoracaoSeparado::placeholder{
+    color: #ffffff;
+  }
+  
+
+  .caixaBotoes{  /*CAIXA CENTRAL COM OS BOTÕES*/
+    position: absolute;
+    top: 50%;
+    left: 41.3%;
+    padding: 10px 20px;
+    
+    
+}
+
+
+  .caixaBotoes button{ /*BOTÕES DA CAIXA*/
+    width: 100%; /*tamanho do conteúdo*/
+    background: linear-gradient( #ff0000,#560000); /*cor de fundo*/
+    color: #ffffff; /*cor da fonte*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-weight: bold; /*negrito*/
+    cursor: pointer; /*mudar o cursor para a mãozinha*/
+    border: 2px solid #000000; /*borda de 2 pixeis e cor preta*/
+    border-radius: 10px; /*arredondar as bordas*/
+    padding: 10px 25px; /*espaçamento interno*/
+    transition: 1s all; /*a demora da transição e o que é que vai demorar, neste caso está sincronizado para tudo*/
+    margin: 15px 0; /*espaçamento externo*/
+  }
+  button:hover{
+    transform:scale(1.05);
+    
+    
+  }
+
+
+  .coracaoJunto{ /*IMAGEM*/
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    top: 31.7%;
+    left: 58.2%;
+    
+  }
+  
+      
+  .containerTextoCoracaoJunto {/*Caixa de texto do coração junto*/
+    position: absolute;
+    top: 50%;
+    left: 60.6%;
+    
+         
+  }
+
+  .textoCoracaoJunto{ 
+    border:transparent;
+    border-radius: 50px ;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    background: transparent;
+
+  }
+
+  .textoCoracaoJunto::placeholder{
+    color: #ffffff;
+  }
+
+.rodape{
+    
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+    border-top: #ffffff;
+}
+
+.rodape p{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+.rodape h3{
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}   
+
+
+

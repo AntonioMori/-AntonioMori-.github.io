@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="decoderStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <title>LoveStorm.io</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                
+                    <img src="coraçoes1.png" class="coracaoBarra" alt="Imagem de corações">
+                    <h1 class="tituloPrincipal">Criptografando na linguagem do amor</h1> 
+                    
+            </div>  
+        </header>
+        
+        <main>
+            <section class="caixaTexto">
+                <h1>Sobre:</h1>
+                <p>Este é um programa de criptografia temático em construção criado para fins didáticos por Antonio Mori, em parceria com a Alura e Programa Oracle Next Education</p>
+            </section>
+
+            <section class="conteudoPrincipal">
+                <div class="caixaCoracao1">
+                    
+                    <img src="coracaoSeparadoPequeno.png" alt="Coração Separado" class="coracaoSeparado">
+                    
+                    <div class="containerTextoCoracaoSeparado">
+                        <textarea cols="42" rows="5" id="textoEntrada" placeholder="Digite seu                     texto aqui" class="textoCoracaoSeparado" ></textarea>
+                </div>
+
+                <div class="caixaBotoes">
+                    <ul>
+                        <li><button id="criptografar">Criptografar</button></li>
+                        <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
+                        <li><button id="descriptografar">Descriptografar</button></li>
+                    </ul>
+
+                </div>
+
+                <div class="caixaCoracao2">
+                    <img src="coracaoJuntoPequeno.png" alt="Coração Completo" class="coracaoJunto">
+                    
+                    <div class="containerTextoCoracaoJunto">
+                        <textarea cols="42" rows="5"  id="textoSaida" placeholder="Criptografado" class="textoCoracaoJunto"></textarea>
+                </div>
+            </section>
+            
+            
+            
+            
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <p>Em Homenagem a</p>
+                <h3>Giovanna Vilela</h3>
+                <p style="font-style: italic;font-weight: bold;">" Tudo o que toca vira amor "</p>
+            </div>
+        </footer>
+
+    </body>
+
+
+
+</html>
+
+<script>
+
+
+var criptografarButton = document.getElementById("criptografar");
+var descodificarButton = document.getElementById("descriptografar");
+
+function move() {
+    var elem = document.getElementById("myBar");   
+    var width = 20;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+        clearInterval(id);
+        } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        elem.innerHTML = width * 1  + '%';
+        }
+        }
+    }
+
+function codifica(){
+    var textoEntrada = document.getElementById('textoEntrada').value;
+    var textoSaida = document.getElementById('textoSaida');
+    var tamanho = textoEntrada.length;
+    var armazem = [];
+    textoEntrada = textoEntrada.toUpperCase();
+        for (var i=0; i<tamanho+1; i++) {
+                
+                var letra = textoEntrada[i];
+                
+                if (letra == "A") {
+                    armazem.push("TeAmooMuitoo");
+                }
+                else if (letra == "B") {
+                    armazem.push("VoceeeEhLindoo");
+                }
+                else if (letra == "C") {
+                    armazem.push("Linda");
+                }
+                else if (letra == "D") {
+                    armazem.push("Cheirosa");
+                }
+                else if (letra == "E") {
+                    armazem.push("Maravilhosa");
+                }
+                else if (letra == "F") {
+                    armazem.push("Bravíssima");
+                }
+                else if (letra == "G") {
+                    armazem.push("AmoVoce");
+                }
+                else if (letra == "H") {
+                    armazem.push("TeAdoro");
+                }
+                else if (letra == "I") {
+                    armazem.push("Lindíssima");
+                }
+                else if (letra == "J") {
+                    armazem.push("Encantadoraa");
+                }
+                else if (letra == "K") {
+                    armazem.push("Amooo");
+                }
+                else if (letra == "L") {
+                    armazem.push("amuu");
+                }
+                else if (letra == "M") {
+                    armazem.push("Amoo");
+                }
+                else if (letra == "N") {
+                    armazem.push("amour");
+                }
+                else if (letra == "O") {
+                    armazem.push("Lindoca");
+                }
+                else if (letra == "P") {
+                    armazem.push("BelezuraDePessoa");
+                }
+                else if (letra == "Q") {
+                    armazem.push("Belezura");
+                }
+                else if (letra == "R") {
+                    armazem.push("♥");
+                }
+                else if (letra == "S") {
+                    armazem.push("MyLove");
+                }
+                else if (letra == "T") {
+                    armazem.push("😍");
+                }
+                else if (letra == "U"){
+                    armazem.push("Lindona");
+                }
+                else if (letra == "V") {
+                    armazem.push("Delicia");
+                }
+                else if (letra == "W") {
+                    armazem.push("MeuAmor");
+                }
+                else if (letra == "X") {
+                    armazem.push("Morzinho");
+                }
+                else if (letra == "Y") {
+                    armazem.push("Perfeita");
+                }
+                else if (letra == "Z") {
+                    armazem.push("Muzao");
+                }
+                else if (letra == " ") {
+                    armazem.push("nuss");
+                }
+                
+        }
+
+    textoSaida.value = armazem
+}      
+
+
+
+function descodifica() {
+    let textoSaida = document.getElementById('textoSaida').value;
+    var textoEntrada = document.getElementById('textoEntrada');
+    
+        textoSaida = textoSaida.replace(/!/g, '')
+        .replace(/´/g, '')
+        .replace(/TeAmooMuitoo/g, 'A')
+        .replace(/VoceeeEhLindoo/g, 'B')
+        .replace(/Linda/g, 'C')
+        .replace(/Cheirosa/g, 'D')
+        .replace(/Maravilhosa/g, 'E')
+        .replace(/Bravíssima/g, 'F')
+        .replace(/AmoVoce/g, 'G')
+        .replace(/TeAdoro/g, 'H')
+        .replace(/Lindíssima/g, 'I') ////
+        .replace(/Encantadoraa/g, 'J')
+        .replace(/Amooo/g, 'K')
+        .replace(/amuu/g, 'L')
+        .replace(/Amoo/g, 'M')
+        .replace(/amour/g, 'N')
+        .replace(/Lindoca/g, 'O')
+        .replace(/BelezuraDePessoa/g, 'P')
+        .replace(/Belezura/g, 'Q')
+        .replace(/♥/g, 'R')
+        .replace(/MyLove/g, 'S')
+        .replace(/😍/g, 'T')
+        .replace(/Lindona/g, 'U')
+        .replace(/Delicia/g, 'V')
+        .replace(/MeuAmor/g, 'W')
+        .replace(/Morzinho/g, 'X')
+        .replace(/Perfeita/g, 'Y')
+        .replace(/Muzao/g, 'Z')
+        .replace(/,/g, '')
+        .replace(/nuss/g, ' ');
+        
+    
+    textoEntrada.value = textoSaida
+
+   
+}
+
+function descodificaComInterval() {
+    move();
+    setTimeout(descodifica, 950);
+}
+
+function codificaComInterval() {
+    move();
+    setTimeout(codifica, 950);
+}
+
+
+
+descodificarButton.onclick = descodificaComInterval;
+criptografarButton.onclick = codificaComInterval;  
+</script>
+
+
+
